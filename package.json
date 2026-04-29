@@ -8,14 +8,13 @@
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "npm run build && vite preview",
-		"deploy": "npm run build && wrangler deploy",
+		"deploy": "npm run cf-typegen && npm run build && wrangler deploy",
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
 		"@base-ui/react": "^1.4.1",
 		"@fontsource-variable/geist": "^5.2.8",
 		"@tailwindcss/vite": "^4.2.4",
-		"better-auth": "^1.6.9",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"cmdk": "^1.1.1",
